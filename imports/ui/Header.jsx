@@ -2,6 +2,10 @@ import React from "react";
 
 import Navbar from "react-bootstrap/Navbar";
 
+// What it does:
+// Make the application less ugly
+// Really, just a visual component
+
 export const Header = () => {
   return (
     <>

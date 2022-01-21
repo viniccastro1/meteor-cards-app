@@ -10,12 +10,19 @@ import { Button } from "react-bootstrap";
 
 import { AddCardForm } from "./AddCardForm";
 
+// What it does:
+// Is the modal that adds new cards to the DB.
+// Also holds <AddCardForm/>
+
 export const AddCardModal = ({ show, setShow }) => {
   const handleClose = () => setShow(false);
 
   const [name, setName] = useState("");
   const [imgUrl, setImgUrl] = useState("");
 
+  // Call a Meteor Method to insert a card on cards collection
+  // Using the value passed from the inputs from
+  // <AddCardForm/>
   const insertToCards = (name, imgUrl) => {
     Meteor.call(
       "cards.insert",
