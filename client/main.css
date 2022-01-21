@@ -1,0 +1,8 @@
+.vh-25 {
+  height: 25vh;
+}
+
+.card-fit-img {
+  height: 300px;
+  object-fit: cover;
+}
